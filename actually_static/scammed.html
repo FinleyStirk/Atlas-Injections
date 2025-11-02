@@ -76,10 +76,6 @@
   </style>
 </head>
 <body>
-  <script>
-    let params = new URLSearchParams(document.location.search);
-    document.getElementsByClassName("fake-creds")[0].textContent = `username: ${params.get("email")} • password: ${params.get("password")}`;
-  </script>
   <div class="card" role="region" aria-label="Scam awareness example">
     <h1>You've been scammed!!1!</h1>
 
@@ -92,5 +88,9 @@
         <p><a href = "https://www.youareanidiot.cc/lol.html"> Click here to be unhacked</a></p>
         </div>
   </div>
+  <script>
+    let params = new URLSearchParams(document.location.search);
+    document.getElementsByClassName("fake-creds")[0].textContent = `username: ${params.get("email")} • password: ${params.get("password")}`;
+  </script>
 </body>
 </html>
