@@ -8,106 +8,105 @@ body {
     height: 100vh;
   }
   
-  .container {
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    width: 100%;
-    max-width: 360px;
-    text-align: center;
-  }
-  
-  .logo-container img {
-    width: 120px; /* approximate size like PayPal login page */
-    margin-bottom: 30px;
-  }
-  
-  input[type="email"], input[type="password"] {
-    width: 100%;
-    padding: 12px 15px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-  }
-  
-  .login-btn {
-    width: 100%;
-    padding: 12px;
-    margin-top: 20px;
-    background-color: #0070ba;
-    color: #fff;
-    border: none;
-    border-radius: 25px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .login-btn:hover {
-    background-color: #005ea6;
-  }
-  
-  .forgot-password {
-    display: block;
-    text-align: left;
-    margin-top: 10px;
-    color: #0070ba;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  
-  .forgot-password:hover {
-    text-decoration: underline;
-  }
-  
-  .or-divider {
-    margin: 20px 0;
-    font-size: 14px;
-    color: #888;
-    display: flex;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .or-divider::before,
-  .or-divider::after {
-    content: "";
-    flex: 1;
-    border-bottom: 1px solid #ccc;
-    margin: 0 10px;
-  }
-  
-  .signup-btn {
-    width: 100%;
-    padding: 12px;
-    border: 2px solid #000;
-    border-radius: 25px;
-    background-color: #fff;
-    color: #000;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .signup-btn:hover {
-    background-color: #f2f2f2;
-  }
-  
-  .footer {
-    margin-top: 30px;
-  }
-  
-  .flag {
-    width: 24px;
-    height: auto;
-  }
-  
-  .flash {
-    background-color: #ffe0e0;
-    color: #d8000c;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    text-align: center;
-  }
-  
+.container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+}
+
+.logo-container img {
+  width: 120px; /* approximate size like PayPal login page */
+  margin-bottom: 30px;
+}
+
+input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #0070ba;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #005ea6;
+}
+
+.forgot-password {
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+  color: #0070ba;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.or-divider {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #888;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.or-divider::before,
+.or-divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+  margin: 0 10px;
+}
+
+.signup-btn {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #000;
+  border-radius: 25px;
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  background-color: #f2f2f2;
+}
+
+.footer {
+  margin-top: 30px;
+}
+
+.flag {
+  width: 24px;
+  height: auto;
+}
+
+.flash {
+  background-color: #ffe0e0;
+  color: #d8000c;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
