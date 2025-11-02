@@ -24,6 +24,12 @@ body {
     margin-bottom: 30px;
 }
 
+.location-dropdown {
+    width: 20px;
+    background-color: transparent;
+    border: none;
+}
+
 input[type="text"], input[type="password"] {
     width: 100%;
     padding: 12px;
