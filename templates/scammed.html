@@ -1,0 +1,93 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Scam Awareness — Decorative Mockup</title>
+  <style>
+    /* Use Comic Sans where available, fall back to cursive */
+    body {
+      margin: 0;
+      font-family: "Comic Sans MS", "Comic Sans", cursive;
+      background: linear-gradient(135deg, #ff66cc 0%, #ff99dd 100%);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: #111; /* dark text for readability against bright pink */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.92);
+      border-radius: 20px;
+      padding: 28px;
+      width: min(720px, 92%);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 2.4rem;
+      color: #ff0077; /* very bright pink for the headline */
+      letter-spacing: 0.6px;
+    }
+
+    p.lead {
+      margin: 0 0 18px;
+      font-size: 1.05rem;
+    }
+
+    .fake-creds {
+      margin: 12px auto 18px;
+      display: inline-block;
+      background: #fff0f6;
+      border: 2px dashed #ff99cc;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-weight: 700;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 12px;
+      background: #ff1493;
+      color: white;
+      font-weight: 700;
+      box-shadow: 0 8px 16px rgba(255,20,147,0.18);
+    }
+
+    footer {
+      margin-top: 18px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    /* Small responsive tweak */
+    @media (max-width: 420px) {
+      h1 { font-size: 1.6rem; }
+      .card { padding: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card" role="region" aria-label="Scam awareness example">
+    <h1>You've been scammed!!1!</h1>
+
+
+    <div class="fake-creds" aria-hidden="true">
+      username: {{email}} • password: {{password}}
+    </div>
+
+
+        <div>
+        <p><a href = "https://www.youareanidiot.cc/lol.html"> Click here to be unhacked</a></p>
+        </div>
+  </div>
+</body>
+</html>
