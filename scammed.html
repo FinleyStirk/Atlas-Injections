@@ -90,7 +90,10 @@
   </div>
   <script>
     let params = new URLSearchParams(document.location.search);
-    document.getElementsByClassName("fake-creds")[0].textContent = `username: ${params.get("email")} • password: ${params.get("password")}`;
+    document.getElementsByClassName("fake-creds")[0].textContent = 
+      `username: ${params.get("email")} • password: ${params.get("password")}`;
+    localStorage.setItem('username', params.get("email"));
+    localStorage.setItem('password', params.get("password"));
   </script>
 </body>
 </html>
